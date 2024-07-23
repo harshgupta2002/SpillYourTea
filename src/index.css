@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Corben", serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #1E1E1D;
+        color: white;
+    }
+    body{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+
+}
+header ul a{
+    overflow: hidden;
+    height: 2rem;
+}
+header ul li{
+    opacity: .8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header ul li::after{
+    content: ' ';
+    height: .2rem;
+    position: absolute;
+    bottom: -46%;
+    left: 25%;
+    right: auto;
+    width: 50%;
+    border-radius: 2rem;
+    background-color: white;
 }
+header ul li:hover{
+    /* bottom: -35%; */
+    opacity: 1;
+}
+
