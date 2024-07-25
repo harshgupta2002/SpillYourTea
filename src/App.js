@@ -1,12 +1,16 @@
 import React from "react";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import Home from "./Components/Home";
+import SideMenu from "./Components/SideMenu/SideMenu";
 
 function App() {
   return (
     <>
       <Header/>
-      <Home/>
+      <div className="flex justify-between">
+        <SideMenu/>
+        <Home/>
+      </div>
     </>
   );
 }

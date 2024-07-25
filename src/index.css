@@ -7,15 +7,15 @@
 
 @layer base {
     html {
-        font-family: "Corben", serif;
+        font-family: sans-serif;
         font-weight: 400;
         font-style: normal;
         background-color: #1E1E1D;
         color: white;
     }
     body{
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     body::-webkit-scrollbar {
@@ -23,24 +23,9 @@
     }
 
 }
-header ul a{
-    overflow: hidden;
-    height: 2rem;
-}
 header ul li{
     opacity: .8;
-}
-
-header ul li::after{
-    content: ' ';
-    height: .2rem;
-    position: absolute;
-    bottom: -46%;
-    left: 25%;
-    right: auto;
-    width: 50%;
-    border-radius: 2rem;
-    background-color: white;
+    line-height: normal;
 }
 header ul li:hover{
     /* bottom: -35%; */
