@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home";
 import SideMenu from "./Components/SideMenu/SideMenu";
 import Card from './Components/Card';
+import profilePicture from '../src/components/House 2.png';
 
 function App() {
   return (
