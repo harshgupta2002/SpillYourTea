@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className=' mt-[5.5rem] ml-[14.5rem] w-[82%] flex flex-col gap-[1rem]'>
 
-        {/* <PostView/>         */}
+        <PostView/>        
 
         <div className=' flex justify-between gap-[4rem] items-center overflow-hidden rounded-2xl h-[45vh] w-full bg-[#E7E7D6]'>
             <div style={{fontFamily:'"Corben", serif'}} className=' ml-[5rem] w-1/2'>
